@@ -1,0 +1,140 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+}
+
+/* Button */
+
+.btn {
+  font-size: 20px;
+  line-height: 36px;
+  text-align: right;
+  color: #114455;
+  text-decoration: none;
+  border: 1px solid #114455;
+  border-radius: 2px;
+  padding: 10px 24px;
+  padding-right: 72px;
+  display: inline-block;
+  position: relative;
+  transition: color 0.15s ease-in, background-color 0.15s ease-in;
+}
+
+.btn:active {
+  top: 1px;
+}
+
+.btn:hover {
+  background-color: #114455;
+  color: #fff;
+}
+
+.btn:hover::after {
+  background-image: url(../img/Arrow_Right_white.svg);
+}
+
+.btn::after{
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/Arrow_Right_Black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn--dark {
+  background-color: #114455;
+  color: #fff;
+}
+
+.btn--dark:hover {
+  background-color: #1F1F1F;
+}
+
+.btn--dark::after {
+  background-image: url(../img/Arrow_Right_white.svg);
+}
+
+.btn--big {
+  padding: 14px 32px;
+  padding-right: 80px;
+}
+
+/* Header */
+
+.header {
+  min-height: 100vh;
+  background-color: #e1edf2;
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1750px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__top {
+  padding: 44px 0;
+  margin-bottom: 126px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  column-gap: 118px;
+}
+
+.link {
+  font-size: 20px;
+  line-height: 36px;
+  text-align: right;
+  color: #114455;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #000;
+}
+
+/* Header content */
+
+.header__content {
+  max-width: 1060px;
+}
+.header__title {
+  max-width: 734px;
+  font-size: 80px;
+  line-height: 94px;
+  color: #114455;
+  font-weight: 800;
+  margin-bottom: 48px;
+}
+
+.header__text {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  color: #1F1F1F;
+  opacity: 0.7;
+  margin-bottom: 78px;
+}
+
