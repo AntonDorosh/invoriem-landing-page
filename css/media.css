@@ -1,0 +1,12 @@
+@media (max-width: 1000px) {
+  .header__title {
+    font-size: 50px;
+    margin-bottom: 28px;
+  }
+
+  .header__text {
+    font-size: 28px;
+    margin-bottom: 52px;
+  }
+}
+
